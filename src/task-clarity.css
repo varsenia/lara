@@ -1,0 +1,119 @@
+.story-intro {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.story-intro p {
+  margin: 4px 0 0;
+  color: #675b70;
+}
+
+.story-icon {
+  display: grid;
+  place-items: center;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e3d8eb;
+  border-radius: 14px;
+  background: #fff;
+  font-size: 22px;
+}
+
+.solve-path {
+  margin-top: 14px;
+  padding: 15px 16px;
+  border: 1px solid #f1dfad;
+  border-radius: 16px;
+  background: #fff8e7;
+}
+
+.solve-path ol {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.solve-path li + li {
+  margin-top: 5px;
+}
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin: 4px 0 16px;
+}
+
+.price-cards p {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 14px;
+  border: 1px solid #e3d8eb;
+  border-radius: 16px;
+  background: #fff;
+}
+
+.price-cards span {
+  color: #574461;
+  font-weight: 700;
+}
+
+.price-cards strong {
+  color: #4f2f70;
+  font-size: 1.35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.price-cards small {
+  color: #766b7d;
+  line-height: 1.35;
+}
+
+.market-clues {
+  display: grid;
+  gap: 9px;
+}
+
+.market-clues p {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0;
+  padding: 11px 13px;
+  border-radius: 14px;
+  background: rgb(255 255 255 / 72%);
+}
+
+.market-clues span {
+  display: grid;
+  place-items: center;
+  flex: 0 0 24px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #65418d;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+@media (max-width: 680px) {
+  .price-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .story-intro {
+    gap: 10px;
+  }
+
+  .solve-path {
+    padding: 14px;
+  }
+
+  .color-facts {
+    grid-template-columns: 1fr;
+  }
+}
